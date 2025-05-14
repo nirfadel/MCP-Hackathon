@@ -15,4 +15,6 @@ We are pulling documents from external services like Mavat web site, this servic
 
 - The project Paython is at the root - Mcp server, agents and api
 - The Frontend Angular is at the directory: app-web --> arch-ai-chatbot
-- Also there is ppt for this project
+- Also there is ppt for this project - מצגת להאקטון
+- Target document that the architact is creating - זכויות בניה בניין חדש
+  
