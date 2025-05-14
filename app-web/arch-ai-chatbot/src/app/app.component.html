@@ -1,0 +1,26 @@
+<div class="chat-container">
+  <h1>AI Arch Data</h1>
+  
+  <div class="search-box">
+    <input 
+      type="text" 
+      [(ngModel)]="address" 
+      placeholder="Enter an address..."
+      (keyup.enter)="searchAddress()"
+    >
+    <button 
+      (click)="searchAddress()" 
+      [disabled]="loading || !address.trim()"
+    >
+      {{ loading ? 'Searching...' : 'Search' }}
+    </button>
+  </div>
+
+  <div class="error-message" *ngIf="error">
+    {{ error }}
+  </div>
+
+  <div class="results" *ngIf="pptxPath">
+    <app-pdf-viewer [pdfPath]="pptxPath"></app-pdf-viewer>
+  </div>
+</div>
